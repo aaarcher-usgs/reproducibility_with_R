@@ -1,3 +1,7 @@
+#+ setup, echo=F
+library(knitr)
+library(ezknitr)
+opts_chunk$set(fig.width = 2,fig.height = 2)
 #' # Data Processing
 #' 
 #' File to make cleaned data file from raw data file.
@@ -17,3 +21,6 @@ data.noNA <- rawdata[! is.na(rawdata$X),]
 plot(x = data.noNA$X, y = data.noNA$Y)
 #' Remove outliers
 cleandata <- data.noNA[data.noNA$Y!=14,]
+
+
+#' Spun with:
