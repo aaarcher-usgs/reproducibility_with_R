@@ -48,3 +48,4 @@ cleandata <- data.noNA[data.noNA$Y!=14,]
 ```
 
 Spun with:
+ezspin("programs/a_processing_data.R",out_dir="output",fig_dir="figures")

@@ -1,7 +1,7 @@
 #+ setup, echo=F
 library(knitr)
 library(ezknitr)
-opts_chunk$set(fig.width = 2,fig.height = 2)
+opts_chunk$set(fig.width = 4,fig.height =4)
 #' # Data Processing
 #' 
 #' File to make cleaned data file from raw data file.
@@ -24,3 +24,4 @@ cleandata <- data.noNA[data.noNA$Y!=14,]
 
 
 #' Spun with:
+#' ezspin("programs/a_processing_data.R",out_dir="output",fig_dir="figures")
